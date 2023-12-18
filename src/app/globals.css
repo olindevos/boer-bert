@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.colorMain {
+    background: #53917E;
+}
+
+.navButtons{
+    background: black;
+    border-radius: 60px;
+    height: 80px;
+    width: 80px;
+    opacity: 70%;
+}
