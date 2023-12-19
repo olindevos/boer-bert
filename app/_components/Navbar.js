@@ -26,7 +26,7 @@ const Navbar = ({ menuItems }) => {
 
   return (
     <header>
-      <nav className={`colorMain flex items-center justify-between p-4 bg-main`}>
+      <nav className={`colorMain mt-32 flex items-center justify-between p-4 bg-main`}>
         <div className="flex items-center">
           <div className="mr-1">
             <Image src="/logo.png" alt="logo" height={60} width={60} />
