@@ -2,6 +2,737 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
+
+  
+    
+  
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+  
+.sidebar{
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 310px;
+  z-index: 999;
+  background-color: #53917E;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  opacity: 100%;
+  display: none;
+}
+.burgermenu{
+  color: black;
+}
+.sidebaropties{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  transition: 0.6s;
+  background: #53917E;
+  padding: 0;
+  z-index: 998;
+}
+.navbaropties {
+  display: flex;
+  font-size: 1vw;
+  width: 50vw;
+}
+
+.headerfoto{
+  width: 100VW;
+}
+
+.naarboven {
+  position: sticky;
+  top: 125px;
+  border: #FF934F solid;
+  background-color: #FF934F;
+  columns: white;
+  width: 9vw;
+  height: 4.5vh;
+  border-radius: 15px;
+  box-shadow: rgb(185, 185, 185) 2px 2px;
+  margin-left: 85%;
+
+  color: white;
+  padding-left: 2%;
+  padding-top: 1%;
+
+  cursor: pointer;
+
+  transition:  0.3s ease-in-out;
+}
+.naarboven:hover {
+  transform: scale(1.05);
+}
+.naarbovenknop{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+.navacctt{
+  display: flex;
+  width: 3vw;
+  margin-left: 20vw;
+  
+}  
+.account{
+  margin-right: 2vw;
+}
+.accountimage {
+  height: 7vh ;
+  width: 4vw;
+}
+.accountbox{
+  border: #cfcfcf7d;
+  background-color: #cfcfcf7d;
+  width: 4vw ;
+  height: 7.5vh ;
+  border-radius: 100px;
+}
+
+.taalbox{
+  border: #cfcfcf7d;
+  background-color: #cfcfcf7d;
+  width: 4vw ;
+  height: 7.5vh ;
+  border-radius: 100px;
+}
+.taalimage{
+  height: 6vh ;
+  width: 4vw;
+}
+
+
+
+.acsq {
+  border: solid #97c5b7;
+  background-color: #97c5b7;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 50px;
+}
+.acount {
+  width: 2.5vw;
+  height: 5vh;
+}
+.lasq {
+  border: solid #97c5b7;
+  background-color: #97c5b7;
+  width: 3vw;
+  height: 6vh;
+  border-radius: 50px;
+}
+.language {
+  width: 40px;
+  height: 40px;
+  padding-top: 10%;
+
+}
+
+.navbar ul li{
+  list-style: none;
+  display: flex;
+  margin: 30px;
+  position: relative;
+
+}
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  padding-left: 10vw;
+}
+.navbar ul li a{
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.navbar ul li::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+
+.navbar ul li:hover::after{
+  width: 100%;
+}
+
+.navbar.stickynavbar ul li::after {
+  content: '';
+  height: 3px;
+  width: 0;
+  background: #fff;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: 0.2s;
+}
+
+.logo{
+  position: relative;
+  width: 6vw;
+  left: 50%;
+  margin-top: 10%; 
+}  
+
+.boerbertfoto{
+  display: flex;
+  margin-left: 250px;
+  margin-top: -160px;
+  width: 25vw;
+  height: 30vh;
+}
+.divctextfoto{
+  margin-left: 300px;
+  margin-top: 40px;
+  font-size: larger;
+}
+.verheader{
+  border:solid #cfcfcf7d;
+  background-color: #cfcfcf7d;
+  display: flex;
+  width: 40%;
+  height: 20%;
+  padding: 1%;
+  margin-left: 40%;
+  margin-top: 20%;
+}
+.plaatjetent{
+  margin-top: -15%;
+  z-index: 1;
+}
+.boekbar {
+border: #53917E solid;
+background-color: #53917E;
+height: 67vh;
+margin-top: -6.7%;
+}
+
+.boekoptiesbar {
+  border: #fff;
+  background-color: #fff;
+  display: flex;
+  height: 15vh;
+  width:40vw ;
+  border-radius: 100px;
+  margin-top: 12%;
+  margin-left: 27.5%;
+}
+.boekopties {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 40vw;
+  height: 15vh;
+}
+.data {
+  display: flex;
+  flex-direction:column;
+  font-size: 1vw;
+}
+.dvt{
+  margin-top: 50%;
+  font-size: 0.8vw;
+}
+.datalijn {
+  border: solid black;
+  height: 15vh;
+  border-width: 0.1vw;
+}
+
+.verblijvers{
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
+}
+.vav{
+  margin-top: 25%;
+  font-size: 0.8vw;
+}
+.verblijverslijn {
+  border: solid black;
+  height: 15vh;
+  border-width: 0.1vw;
+}
+
+.soortaccomodatie {
+  display: flex;
+  flex-direction: column;
+  font-size: 1vw;
+}
+.stc {
+  margin-top: 20%;
+  font-size: 0.8vw;
+}
+.boeken {
+  margin-left: -5%;
+  height: 5vh;
+  width: 7vw;
+  border-radius: 100px;
+  background-color: #FF934F;
+  font-size: 1vw;
+}
+
+
+.divacre {
+  margin-top: 10%;
+  margin-left: 10%;
+  font-size: xx-large;
+  
+}
+
+.meerzien{
+  display: flex;
+}
+.mz {
+  margin-left: 70vw;
+  justify-content: center;
+  margin-top: 2vh;
+  font-size: 2vw;
+}
+
+.meerzienknop{
+  border: #FF934F solid;
+  background-color: #FF934F;
+  box-shadow: 2px 2px  grey;
+  border-radius: 100px;
+  width: 4vw;
+  height: 8vh;
+
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  margin-left: 1vw;
+
+}
+.meerzienknop:hover {
+  transform: scale(1.1);
+}
+
+.actcards {
+  margin-top: 5%;
+  display: flex;
+  margin-left: 15%;
+  z-index: 1;
+}
+.card1 {
+  border: solid black;
+  width: 13vw;
+  height: 38vh;
+  border-bottom-right-radius: 20px;
+}
+.card2 {
+  border: solid black;
+  width: 13vw;
+  height: 38vh;
+  margin-left: 5%;
+  border-bottom-right-radius: 20px;
+}
+.card3  {
+  border: solid black;
+  width: 13vw;
+  height: 38vh;
+  margin-left: 5%;
+  border-bottom-right-radius: 20px;
+}
+
+.rescards {
+  margin-top: 3%;
+  display: flex;
+  margin-left: 15%;
+  z-index: 1;
+}
+.rescard1 {
+  border: solid black;
+  width: 13vw;
+  height: 38vh;
+  border-bottom-right-radius: 20px;
+}
+.rescard2 {
+  border: solid black;
+  width: 13vw;
+  height: 38vh;
+  margin-left: 5%;
+  border-bottom-right-radius: 20px;
+}
+.rescard3  {
+  border: solid black;
+  width: 13vw;
+  height: 38vh;
+  margin-left: 5%;
+  border-bottom-right-radius: 20px;
+}
+
+.filmpjebar {
+  margin-top: 10%;
+  border: #53917E solid;
+  height: 67vh;
+  background-color: #53917E;
+}
+.filmpje{
+  margin-top: 9%;
+  margin-left: 20%;
+  border: solid black;
+  height: 34vh;
+  width: 30vw;
+  z-index: 2;
+  border: solid black;
+  box-shadow: 10px 10px  rgb(155, 155, 155);
+  border-radius: 20px;
+}
+
+
+
+.digitalekaart{
+  display: flex;
+  margin-top: 10%;
+  margin-left: 15%;
+}
+.tip{
+  border: solid black;
+  width: 20vw ;
+  height: 35vh;
+}
+.kaart{
+  border: solid black;
+  width: 40vw ;
+  height: 60vh;
+  margin-left: 3%;
+  box-shadow:  4px 4px rgba(0, 0, 0, 0.3);
+}
+.dowbek{
+  border: solid #FF934F;
+  background-color: #FF934F;
+  width: 9vw ;
+  height: 6vh;
+  margin-left: 69%;
+  margin-top: 2.5%;
+  border-radius: 50px;
+
+}
+
+
+.recensiesbar{
+  border:solid #53917E;
+  background-color: #53917E;
+  width: 100%;
+  height: 67vh;
+  margin-top: 10%;
+  display: flex;
+  justify-content: center;
+}
+.BRrec{
+
+  width: 27.25vw;
+  height: 67vh;
+}
+.RECS {
+  display: flex;
+  justify-content: center;
+  height: 67vh;
+  width: 45vw;
+  align-items: center;
+
+}
+.recensie1{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+}
+.SREC1 {
+  font-size: 2vw;
+
+}
+.PFOTO1{
+  border: solid black;
+  background-color: black;
+  width: 3vw;
+  height: 5.5vh;
+  border-radius: 100px;
+  margin-top: 2%;
+}
+.np1 {
+  display: flex;
+  justify-content: center;
+  width: 12vw;
+}
+.LREC1{
+  width: 12vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+
+}
+.rc1 {
+  display: flex;
+  width: 12vw;
+}
+.DREC1{
+  margin-top: 2%;
+}
+
+
+.recensie2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+
+}
+.SREC2 {
+  font-size: 2vw;
+}
+.PFOTO2{
+  border: solid black;
+  background-color: black;
+  width: 3vw;
+  height: 5.5vh;
+  border-radius: 100px;
+  margin-top: 2%;
+}
+.LREC2{
+  width: 12vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.rc2 {
+  display: flex;
+  width: 12vw;
+}
+.DREC2{
+  margin-top: 2%;
+}
+
+.recensie3{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3%;
+
+}
+.SREC3 {
+  font-size: 2vw;
+}
+.PFOTO3{
+  border: solid black;
+  background-color: black;
+  width: 3vw;
+  height: 5.5vh;
+  border-radius: 100px;
+}
+.LREC3{
+  width: 12vw;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.rc3 {
+  display: flex;
+  width: 12vw;
+}
+.DREC3{
+  margin-top: 2%;
+}
+
+.mrrcdiv {
+
+  height: 67vh;
+  width: 27.25vw; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meerrecensies{
+  border: #FF934F solid;
+  background-color: #FF934F;
+  width: 4vw;
+  height: 7.5vh;
+  border-radius: 100px;
+  box-shadow: 2px 2px gray;
+  display: flex;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+}
+.meerrecensies:hover {
+  transform: scale(1.1);
+}
+.mrp{
+  color: ghostwhite;
+  font-size: 2.5vw;
+  margin-left: 20%;
+  margin-top: 12.5%;
+}
+
+
+
+
+
+
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100vw;
+  height: 50vh;
+}
+.FAQTITEL{
+  margin-left: 30%;
+  font-size: 1vw;
+}
+.FAQs{
+  
+  margin-top: 10%;
+  margin-bottom: 10%;
+
+}
+.faQarrowdown{
+  border: #FF934F;
+  background-color: #FF934F ;
+  width: 2vw;
+  height: 5vh;
+  border-radius: 120px;
+  box-shadow: 2px 2px rgb(203, 203, 203);
+  margin-left: 70%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.faQarrowdown :hover {
+ 
+}
+.FAQ1{
+  border-radius: 5px;
+  border: #dcdcdc;
+  background-color: #dcdcdc;
+  width: 30vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.FAQ2{
+  border-radius: 5px;
+  border: #dcdcdc;
+  background-color: #dcdcdc;
+  width: 30vw;
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.FAQ3{
+  border-radius: 5px;
+  border: #dcdcdc;
+  background-color: #dcdcdc;
+  width: 30vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.FAQ4 {
+  border-radius: 5px;
+  border: #dcdcdc;
+  background-color: #dcdcdc;
+  width: 30vw;
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+/*----tablet 768PX------*/
+@media screen and (max-width:768px){
+  .navbar{
+    font-size: 2vw ;
+  }
+  .navbaropties{
+    font-size: 1vw;
+  }
+  .account{
+    margin-right: 0vw;
+  }
+  .accountimage{
+    height: 7vh;
+    width: 4vw;
+  }
+  .accountbox{
+    border: #cfcfcf7d;
+    background-color: #cfcfcf7d;
+    width: 4vw ;
+    height: 7.5vh ;
+    border-radius: 100px;
+  }
+  .logo{
+    width: 6vw;
+  }
+  
+}
+
+/*----iphone 425PX------*/
+@media screen and (max-width:425px){
+  .navbar{
+    width: 191vw;
+    height: 20vh;
+  }
+  .navbaropties{
+
+  }
+  .logo{
+    width: 25vw;
+    margin-left: -20%;
+  }  
+  .sidebar1{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 310px;
+    z-index: 999;
+    background-color: #53917E;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 100%;
+  }
+  .sidebaropties{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+
+}
 h1,
 .h1,
 h2,
