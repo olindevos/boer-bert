@@ -1,7 +1,3 @@
-
-
-export default function blokje(){
-    return(<div>
-        
-    </div>);
+export default function blokje() {
+  return <div></div>;
 }

@@ -1,30 +1,34 @@
-export default function Boekbar () {
-    return (  <section class="boekbar">
-    
-    <div class="boekoptiesbar">
+export default function Boekbar() {
+  return (
+    <section className="boekbar">
+      <div className="boekoptiesbar">
+        <div className="boekopties">
+          <div className=" data ">
+            data
+            <div className="dvt"> van - tot</div>
+          </div>
 
-<div class="boekopties">
-      <div class=" data ">data
-        <div class="dvt"> van - tot</div>
+          <div className=" datalijn "></div>
+
+          <div className=" verblijvers">
+            verblijvers
+            <div className="vav"> aantal verblijvers</div>
+          </div>
+
+          <div className=" verblijverslijn"></div>
+
+          <div className=" soortaccomodatie">
+            soort acomodatie
+            <div className="stc"> tent - camper ETC.</div>
+          </div>
+
+          <div className=" soortacclijn"></div>
+
+          <button className="boeken" type="button">
+            boeken
+          </button>
+        </div>
       </div>
-
-      <div class=" datalijn "></div>
-
-      <div class=" verblijvers">verblijvers
-        <div class="vav"> aantal verblijvers</div>
-      </div>
-
-      <div class=" verblijverslijn"></div>
-
-      <div class=" soortaccomodatie">soort acomodatie
-        <div class="stc"> tent - camper ETC.</div>
-      </div>
-
-      <div class=" soortacclijn"></div>
-
-      <button class="boeken" type="button">boeken</button>
-</div>              
-    </div>
-    
-   </section>)
+    </section>
+  );
 }

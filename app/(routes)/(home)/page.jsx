@@ -3,10 +3,9 @@ import Boekbar from '@/app/_components/boekbar';
 import Divacre from '@/app/_components/divacre';
 import Filmpje from '@/app/_components/filmpje';
 import Footerhome from '@/app/_components/Footerhome';
-import Kaart from '@/app/_components/kaart';
+import Kaart from '@/app/_components/Kaart';
 import RecensiesSection from '@/app/_components/recensies/RecensiesSection';
 import Image from 'next/image';
-import { FaQq } from 'react-icons/fa';
 
 const Home = () => {
   return (
@@ -28,6 +27,5 @@ const Home = () => {
     </div>
   );
 };
-
 
 export default Home;

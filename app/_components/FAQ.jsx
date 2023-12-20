@@ -1,35 +1,39 @@
-import { SlArrowDown } from "react-icons/sl";
+import { SlArrowDown } from 'react-icons/sl';
 export default function FAQ() {
-    return (
-   
+  return (
+    <section className="FAQs">
+      <div className="FAQTITEL"> FAQ'S</div>
 
-  
-<section class="FAQs">
-<div class="FAQTITEL"> FAQ'S</div>
+      <div className="faq">
+        <div className="FAQ1">
+          veelgestelde vraag{' '}
+          <div classNameName="faQarrowdown">
+            <SlArrowDown />
+          </div>
+        </div>
+        <div className="FAQ2">
+          veelgestelde vraag{' '}
+          <div classNameName="faQarrowdown">
+            <SlArrowDown />
+          </div>
+        </div>
+        <div className="FAQ3">
+          veelgestelde vraag{' '}
+          <div classNameName="faQarrowdown">
+            <SlArrowDown />
+          </div>
+        </div>
 
-<div className="faq">
-<div class="FAQ1"> veelgestelde vraag     <div className="faQarrowdown"><SlArrowDown /></div>
-</div>
-<div class="FAQ2"> veelgestelde vraag     <div className="faQarrowdown"><SlArrowDown /></div>
-</div>
-<div class="FAQ3"> veelgestelde vraag     <div className="faQarrowdown"><SlArrowDown /></div>
-</div>
+        <div className="FAQ4">
+          veelgestelde vraag{' '}
+          <div classNameName="faQarrowdown">
+            <SlArrowDown />
+          </div>{' '}
+        </div>
+        <div className=""></div>
+      </div>
 
-<div class="FAQ4">veelgestelde vraag <div className="faQarrowdown"><SlArrowDown /></div> </div>
-<div class=""></div>
-</div>
-
-
-
-<script>
-    
-</script>
-
-</section>
- 
-
-
-
-
-    );
+      <script></script>
+    </section>
+  );
 }
