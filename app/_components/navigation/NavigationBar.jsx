@@ -1,11 +1,11 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
-import { FaUser } from 'react-icons/fa';
-import MobileNavigationBar from './MobileNavigationBar';
-import { IoMenu } from 'react-icons/io5';
-import Image from 'next/image';
+import Link from "next/link";
+import { useState } from "react";
+import { FaUser } from "react-icons/fa";
+import MobileNavigationBar from "./MobileNavigationBar";
+import { IoMenu } from "react-icons/io5";
+import Image from "next/image";
 
 export default function NavigationBar({ user }) {
   const [isActive, setIsActive] = useState(false);
@@ -15,7 +15,7 @@ export default function NavigationBar({ user }) {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 bg-groen flex justify-between items-center z-[99999]">
+    <nav className="navbar">
       <div className="flex h-full">
         <Link href="/">
           <Image src="/logo.png" alt="logo" height={60} width={60} />
@@ -25,17 +25,21 @@ export default function NavigationBar({ user }) {
             <li>
               <Link href="/reserveren">Reserveren</Link>
             </li>
-            <li>
+            <li className="overonsborder">
               <Link href="/over-ons">Over ons</Link>
             </li>
+
             <li>
-              <Link href="/activiteiten">Activiteiten</Link>
+              <a href="/#activiteiten">Activiteiten</a>
             </li>
             <li>
-              <Link href="/plattegrond">Plattegrond</Link>
+              <a href="/#plattegrond">Plattegrond</a>
             </li>
             <li>
-              <Link href="/contact">Contact</Link>
+              <a href="/#FAQs">FAQ&apos;s en Recensies</a>
+            </li>
+            <li>
+              <a href="/#contact">Contact</a>
             </li>
             {user ? (
               <>
@@ -45,9 +49,12 @@ export default function NavigationBar({ user }) {
                     {user.name}
                   </Link>
                 </li>
-                {user.role === 'admin' ? (
+                {user.role === "admin" ? (
                   <li className="p-2">
-                    <Link href="/dashboard" className=" bg-wit rounded-md text-black px-2 py-1">
+                    <Link
+                      href="/dashboard"
+                      className=" bg-wit rounded-md text-black px-2 py-1"
+                    >
                       Admin Dashboard
                     </Link>
                   </li>
@@ -77,7 +84,11 @@ export default function NavigationBar({ user }) {
         </button>
       </div>
 
-      {isActive ? <MobileNavigationBar user={user} handleNav={handleNav} /> : <></>}
+      {isActive ? (
+        <MobileNavigationBar user={user} handleNav={handleNav} />
+      ) : (
+        <></>
+      )}
     </nav>
   );
 }

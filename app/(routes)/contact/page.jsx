@@ -1,4 +1,4 @@
-import RecensiesSection from '@/app/_components/recensies/RecensiesSection';
+import RecensiesSection from "@/app/_components/recensies/RecensiesSection";
 
 export default function Home() {
   return (

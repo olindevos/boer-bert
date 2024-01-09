@@ -1,9 +1,9 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useSearchParams } from 'next/navigation';
+import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 
-import { useState } from 'react';
+import { useState } from "react";
 
 export default function Afronden() {
   const [afgerond, setAfgerond] = useState(true);
@@ -50,7 +50,7 @@ export default function Afronden() {
       <h1>Reservering afgerond</h1>
       {afgerond ? (
         <div>
-          Bekijk je reservering op je{' '}
+          Bekijk je reservering op je{" "}
           <Link href="/account" className="underline">
             account pagina
           </Link>

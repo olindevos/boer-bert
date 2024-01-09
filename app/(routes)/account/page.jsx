@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useRouter } from 'next/navigation';
+import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Account() {
   const [user, setUser] = useState({});
@@ -11,8 +11,8 @@ export default function Account() {
 
   const handleLogout = async () => {
     await fetch(`${process.env.NEXT_PUBLIC_BASE_URL_SERVER}/api/auth/logout`, {
-      method: 'POST',
-      credentials: 'include',
+      method: "POST",
+      credentials: "include",
     });
 
     refresh();
@@ -20,18 +20,21 @@ export default function Account() {
 
   useEffect(() => {
     const fetchData = async () => {
-      const responseUser = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL_SERVER}/api/auth/user`, {
-        method: 'GET',
-        headers: { 'Content-Type': 'application/json' },
-        credentials: 'include',
-      });
+      const responseUser = await fetch(
+        `${process.env.NEXT_PUBLIC_BASE_URL_SERVER}/api/auth/user`,
+        {
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
+        }
+      );
 
       const responseReservations = await fetch(
         `${process.env.NEXT_PUBLIC_BASE_URL_SERVER}/api/reservations`,
         {
-          method: 'GET',
-          headers: { 'Content-Type': 'application/json' },
-          credentials: 'include',
+          method: "GET",
+          headers: { "Content-Type": "application/json" },
+          credentials: "include",
         }
       );
 
@@ -66,8 +69,8 @@ export default function Account() {
             <li key={reservation.id}>
               <div>Reservering ID: {reservation.id}</div>
               <div>
-                Van {reservation.checkInDate.split('T')[0]} tot{' '}
-                {reservation.checkOutDate.split('T')[0]}
+                Van {reservation.checkInDate.split("T")[0]} tot{" "}
+                {reservation.checkOutDate.split("T")[0]}
               </div>
               <div>Plek nummer: {reservation.spotId}</div>
             </li>
@@ -76,7 +79,10 @@ export default function Account() {
           <></>
         )}
       </ul>
-      <button onClick={handleLogout} className="mt-4 px-4 py-2 bg-blauw text-wit rounded-md">
+      <button
+        onClick={handleLogout}
+        className="mt-4 px-4 py-2 bg-blauw text-wit rounded-md"
+      >
         Log uit
       </button>
     </section>

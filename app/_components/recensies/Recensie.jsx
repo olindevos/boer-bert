@@ -1,5 +1,5 @@
-import Image from 'next/image';
-import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from 'react-icons/io';
+import Image from "next/image";
+import { IoIosStar, IoIosStarHalf, IoIosStarOutline } from "react-icons/io";
 
 export default function Recensie({ name, stars, body }) {
   const fullStars = Math.floor(stars);

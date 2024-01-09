@@ -1,21 +1,21 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 export default function Login() {
   const searchParams = useSearchParams();
-  let redirectUrlParam = searchParams.get('redirect_url');
+  let redirectUrlParam = searchParams.get("redirect_url");
 
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [errorMessage, setErrorMessage] = useState('');
-  const [message, setMessage] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+  const [errorMessage, setErrorMessage] = useState("");
+  const [message, setMessage] = useState("");
 
   useEffect(() => {
-    redirectUrlParam = searchParams.get('redirect_url');
+    redirectUrlParam = searchParams.get("redirect_url");
 
-    if (redirectUrlParam) setMessage('Log in om deze pagina te bekijken.');
+    if (redirectUrlParam) setMessage("Log in om deze pagina te bekijken.");
 
     return () => {};
   }, [redirectUrlParam]);
@@ -23,17 +23,20 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-    const redirectUrl = redirectUrlParam ? redirectUrlParam : '/';
+    const redirectUrl = redirectUrlParam ? redirectUrlParam : "/";
 
-    const response = await fetch(`${process.env.NEXT_PUBLIC_BASE_URL_SERVER}/api/auth/login`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      credentials: 'include',
-      body: JSON.stringify({
-        email,
-        password,
-      }),
-    });
+    const response = await fetch(
+      `${process.env.NEXT_PUBLIC_BASE_URL_SERVER}/api/auth/login`,
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        credentials: "include",
+        body: JSON.stringify({
+          email,
+          password,
+        }),
+      }
+    );
 
     if (!response.ok) {
       const errorData = await response.json();

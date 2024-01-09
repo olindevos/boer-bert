@@ -26,7 +26,7 @@ const Navbar = ({ menuItems }) => {
 
   return (
     <header>
-      <nav className={`colorMain mt-32 flex items-center justify-between p-4 bg-main`}>
+      <nav className="navbar">
         <div className="flex items-center">
           <div className="mr-1">
             <Image src="/logo.png" alt="logo" height={60} width={60} />
@@ -44,7 +44,7 @@ const Navbar = ({ menuItems }) => {
         </div>
         <div className="flex items-center">
           <button className="m-0.5">
-            <div className="navButtons flex justify-center">
+            <div className=" accountborder navButtons flex justify-center">
               <Image src="/person.png" alt="profile" height={48} width={64} />
             </div>
           </button>
