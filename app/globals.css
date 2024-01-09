@@ -2,52 +2,50 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
-
-  
-    
-  
-*{
+* {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
 }
+.w-screen {
+  margin-top: -10vh;
+}
 
-  
-.sidebar{
+.sidebar {
   position: fixed;
   top: 0;
   right: 0;
   height: 100vh;
   width: 310px;
   z-index: 999;
-  background-color: #53917E;
+  background-color: #53917e;
   box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
   opacity: 100%;
   display: none;
 }
-.burgermenu{
+.burgermenu {
   color: black;
 }
-.sidebaropties{
+.sidebaropties {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
 }
 
-.navbar{
+.navbar {
   position: fixed;
   top: 0;
   left: 0;
-  width: 100vw;
+  right: 0;
   display: flex;
   align-items: center;
-  transition: 0.6s;
-  background: #53917E;
-  padding: 0;
-  z-index: 998;
+  justify-content: space-between;
+  background-color: #427a69;
+  z-index: 999999;
+}
+.overonsborder {
+  border-right: rgb(199, 199, 199) solid 1px;
 }
 .navbaropties {
   display: flex;
@@ -55,15 +53,15 @@
   width: 50vw;
 }
 
-.headerfoto{
-  width: 100VW;
+.headerfoto {
+  width: 100vw;
 }
 
 .naarboven {
   position: sticky;
   top: 125px;
-  border: #FF934F solid;
-  background-color: #FF934F;
+  border: #ff934f solid;
+  background-color: #ff934f;
   columns: white;
   width: 9vw;
   height: 4.5vh;
@@ -77,53 +75,47 @@
 
   cursor: pointer;
 
-  transition:  0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 .naarboven:hover {
   transform: scale(1.05);
 }
-.naarbovenknop{
+.naarbovenknop {
   color: white;
   text-decoration: none;
 }
 
-
-
-
-.navacctt{
+.navacctt {
   display: flex;
   width: 3vw;
   margin-left: 20vw;
-  
-}  
-.account{
+}
+.account {
   margin-right: 2vw;
 }
 .accountimage {
-  height: 7vh ;
+  height: 7vh;
   width: 4vw;
 }
-.accountbox{
+.accountbox {
   border: #cfcfcf7d;
   background-color: #cfcfcf7d;
-  width: 4vw ;
-  height: 7.5vh ;
+  width: 4vw;
+  height: 7.5vh;
   border-radius: 100px;
 }
 
-.taalbox{
+.taalbox {
   border: #cfcfcf7d;
   background-color: #cfcfcf7d;
-  width: 4vw ;
-  height: 7.5vh ;
+  width: 4vw;
+  height: 7.5vh;
   border-radius: 100px;
 }
-.taalimage{
-  height: 6vh ;
+.taalimage {
+  height: 6vh;
   width: 4vw;
 }
-
-
 
 .acsq {
   border: solid #97c5b7;
@@ -147,74 +139,29 @@
   width: 40px;
   height: 40px;
   padding-top: 10%;
-
 }
 
-.navbar ul li{
-  list-style: none;
-  display: flex;
-  margin: 30px;
-  position: relative;
-
-}
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  padding-left: 10vw;
-}
-.navbar ul li a{
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.navbar ul li::after{
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.2s;
-}
-
-.navbar ul li:hover::after{
-  width: 100%;
-}
-
-.navbar.stickynavbar ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.2s;
-}
-
-.logo{
+.logo {
   position: relative;
   width: 6vw;
   left: 50%;
-  margin-top: 10%; 
-}  
+  margin-top: 10%;
+}
 
-.boerbertfoto{
+.boerbertfoto {
   display: flex;
   margin-left: 250px;
   margin-top: -160px;
   width: 25vw;
   height: 30vh;
 }
-.divctextfoto{
+.divctextfoto {
   margin-left: 300px;
   margin-top: 40px;
   font-size: larger;
 }
-.verheader{
-  border:solid #cfcfcf7d;
+.verheader {
+  border: solid #cfcfcf7d;
   background-color: #cfcfcf7d;
   display: flex;
   width: 40%;
@@ -223,15 +170,15 @@
   margin-left: 40%;
   margin-top: 20%;
 }
-.plaatjetent{
+.plaatjetent {
   margin-top: -15%;
   z-index: 1;
 }
 .boekbar {
-border: #53917E solid;
-background-color: #53917E;
-height: 67vh;
-margin-top: -6.7%;
+  border: #53917e solid;
+  background-color: #53917e;
+  height: 67vh;
+  margin-top: -6.7%;
 }
 
 .boekoptiesbar {
@@ -239,44 +186,44 @@ margin-top: -6.7%;
   background-color: #fff;
   display: flex;
   height: 15vh;
-  width:40vw ;
+  width: 45vw;
   border-radius: 100px;
-  margin-top: 12%;
+  margin-top: 30vh;
   margin-left: 27.5%;
 }
 .boekopties {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  width: 40vw;
+  width: 45vw;
   height: 15vh;
 }
 .data {
   display: flex;
-  flex-direction:column;
+  flex-direction: column;
   font-size: 1vw;
 }
-.dvt{
+.dvt {
   margin-top: 50%;
   font-size: 0.8vw;
 }
 .datalijn {
-  border: solid black;
+  border: solid rgb(150, 142, 142);
   height: 15vh;
   border-width: 0.1vw;
 }
 
-.verblijvers{
+.verblijvers {
   display: flex;
   flex-direction: column;
   font-size: 1vw;
 }
-.vav{
+.vav {
   margin-top: 25%;
   font-size: 0.8vw;
 }
 .verblijverslijn {
-  border: solid black;
+  border: solid rgb(150, 142, 142);
   height: 15vh;
   border-width: 0.1vw;
 }
@@ -295,19 +242,18 @@ margin-top: -6.7%;
   height: 5vh;
   width: 7vw;
   border-radius: 100px;
-  background-color: #FF934F;
+  background-color: #ff934f;
   font-size: 1vw;
+  color: rgb(255, 255, 255);
 }
-
 
 .divacre {
   margin-top: 10%;
   margin-left: 10%;
   font-size: xx-large;
-  
 }
 
-.meerzien{
+.meerzien {
   display: flex;
 }
 .mz {
@@ -317,18 +263,17 @@ margin-top: -6.7%;
   font-size: 2vw;
 }
 
-.meerzienknop{
-  border: #FF934F solid;
-  background-color: #FF934F;
-  box-shadow: 2px 2px  grey;
+.meerzienknop {
+  border: #ff934f solid;
+  background-color: #ff934f;
+  box-shadow: 2px 2px grey;
   border-radius: 100px;
-  width: 4vw;
+  width: 4.5vw;
   height: 8vh;
 
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   margin-left: 1vw;
-
 }
 .meerzienknop:hover {
   transform: scale(1.1);
@@ -345,22 +290,34 @@ margin-top: -6.7%;
   width: 13vw;
   height: 38vh;
   border-bottom-right-radius: 20px;
+  transition: transform ease-in 0.3s;
 }
+.card1:hover {
+  transform: scale(1.05);
+}
+
 .card2 {
   border: solid black;
   width: 13vw;
   height: 38vh;
   margin-left: 5%;
   border-bottom-right-radius: 20px;
+  transition: transform ease-in 0.3s;
 }
-.card3  {
+.card2:hover {
+  transform: scale(1.05);
+}
+.card3 {
   border: solid black;
   width: 13vw;
   height: 38vh;
   margin-left: 5%;
   border-bottom-right-radius: 20px;
+  transition: transform ease-in 0.3s;
 }
-
+.card3:hover {
+  transform: scale(1.05);
+}
 .rescards {
   margin-top: 3%;
   display: flex;
@@ -372,6 +329,10 @@ margin-top: -6.7%;
   width: 13vw;
   height: 38vh;
   border-bottom-right-radius: 20px;
+  transition: transform ease-in 0.3s;
+}
+.rescard1:hover {
+  transform: scale(1.05);
 }
 .rescard2 {
   border: solid black;
@@ -379,22 +340,29 @@ margin-top: -6.7%;
   height: 38vh;
   margin-left: 5%;
   border-bottom-right-radius: 20px;
+  transition: transform ease-in 0.3s;
 }
-.rescard3  {
+.rescard2:hover {
+  transform: scale(1.05);
+}
+.rescard3 {
   border: solid black;
   width: 13vw;
   height: 38vh;
   margin-left: 5%;
   border-bottom-right-radius: 20px;
+  transition: transform ease-in 0.3s;
 }
-
+.rescard3:hover {
+  transform: scale(1.05);
+}
 .filmpjebar {
   margin-top: 10%;
-  border: #53917E solid;
+  border: #53917e solid;
   height: 67vh;
-  background-color: #53917E;
+  background-color: #53917e;
 }
-.filmpje{
+.filmpje {
   margin-top: 9%;
   margin-left: 20%;
   border: solid black;
@@ -402,52 +370,47 @@ margin-top: -6.7%;
   width: 30vw;
   z-index: 2;
   border: solid black;
-  box-shadow: 10px 10px  rgb(155, 155, 155);
+  box-shadow: 10px 10px rgb(155, 155, 155);
   border-radius: 20px;
 }
 
-
-
-.digitalekaart{
+.digitalekaart {
   display: flex;
-  margin-top: 10%;
+  padding-top: 10%;
   margin-left: 15%;
 }
-.tip{
+.tip {
   border: solid black;
-  width: 20vw ;
+  width: 20vw;
   height: 35vh;
 }
-.kaart{
+.kaart {
   border: solid black;
-  width: 40vw ;
+  width: 40vw;
   height: 60vh;
   margin-left: 3%;
-  box-shadow:  4px 4px rgba(0, 0, 0, 0.3);
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.3);
 }
-.dowbek{
-  border: solid #FF934F;
-  background-color: #FF934F;
-  width: 9vw ;
+.dowbek {
+  border: solid #ff934f;
+  background-color: #ff934f;
+  width: 9vw;
   height: 6vh;
   margin-left: 69%;
   margin-top: 2.5%;
   border-radius: 50px;
-
 }
 
-
-.recensiesbar{
-  border:solid #53917E;
-  background-color: #53917E;
+.recensiesbar {
+  border: solid #53917e;
+  background-color: #53917e;
   width: 100%;
   height: 67vh;
   margin-top: 10%;
   display: flex;
   justify-content: center;
 }
-.BRrec{
-
+.BRrec {
   width: 27.25vw;
   height: 67vh;
 }
@@ -457,9 +420,8 @@ margin-top: -6.7%;
   height: 67vh;
   width: 45vw;
   align-items: center;
-
 }
-.recensie1{
+.recensie1 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -467,9 +429,8 @@ margin-top: -6.7%;
 }
 .SREC1 {
   font-size: 2vw;
-
 }
-.PFOTO1{
+.PFOTO1 {
   border: solid black;
   background-color: black;
   width: 3vw;
@@ -482,32 +443,29 @@ margin-top: -6.7%;
   justify-content: center;
   width: 12vw;
 }
-.LREC1{
+.LREC1 {
   width: 12vw;
   margin-top: 5%;
   margin-bottom: 5%;
-
 }
 .rc1 {
   display: flex;
   width: 12vw;
 }
-.DREC1{
+.DREC1 {
   margin-top: 2%;
 }
 
-
-.recensie2{
+.recensie2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3%;
-
 }
 .SREC2 {
   font-size: 2vw;
 }
-.PFOTO2{
+.PFOTO2 {
   border: solid black;
   background-color: black;
   width: 3vw;
@@ -515,7 +473,7 @@ margin-top: -6.7%;
   border-radius: 100px;
   margin-top: 2%;
 }
-.LREC2{
+.LREC2 {
   width: 12vw;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -524,28 +482,27 @@ margin-top: -6.7%;
   display: flex;
   width: 12vw;
 }
-.DREC2{
+.DREC2 {
   margin-top: 2%;
 }
 
-.recensie3{
+.recensie3 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3%;
-
 }
 .SREC3 {
   font-size: 2vw;
 }
-.PFOTO3{
+.PFOTO3 {
   border: solid black;
   background-color: black;
   width: 3vw;
   height: 5.5vh;
   border-radius: 100px;
 }
-.LREC3{
+.LREC3 {
   width: 12vw;
   margin-top: 5%;
   margin-bottom: 5%;
@@ -554,21 +511,20 @@ margin-top: -6.7%;
   display: flex;
   width: 12vw;
 }
-.DREC3{
+.DREC3 {
   margin-top: 2%;
 }
 
 .mrrcdiv {
-
   height: 67vh;
-  width: 27.25vw; 
+  width: 27.25vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.meerrecensies{
-  border: #FF934F solid;
-  background-color: #FF934F;
+.meerrecensies {
+  border: #ff934f solid;
+  background-color: #ff934f;
   width: 4vw;
   height: 7.5vh;
   border-radius: 100px;
@@ -580,18 +536,12 @@ margin-top: -6.7%;
 .meerrecensies:hover {
   transform: scale(1.1);
 }
-.mrp{
+.mrp {
   color: ghostwhite;
   font-size: 2.5vw;
   margin-left: 20%;
   margin-top: 12.5%;
 }
-
-
-
-
-
-
 
 .faq {
   display: flex;
@@ -601,138 +551,89 @@ margin-top: -6.7%;
   width: 100vw;
   height: 50vh;
 }
-.FAQTITEL{
-  margin-left: 30%;
-  font-size: 1vw;
+.FAQTITEL {
+  margin-left: 28%;
+  font-size: 2vw;
 }
-.FAQs{
-  
-  margin-top: 10%;
+.FAQs {
+  padding-top: 10%;
   margin-bottom: 10%;
-
 }
-.faQarrowdown{
-  border: #FF934F;
-  background-color: #FF934F ;
-  width: 2vw;
-  height: 5vh;
+.faQarrowdown {
+  border: #ff934f;
+  background-color: #ff934f;
+  width: 3vw;
+  height: 5.3vh;
   border-radius: 120px;
-  box-shadow: 2px 2px rgb(203, 203, 203);
-  margin-left: 70%;
+  box-shadow: 2px 2px rgb(108, 108, 108);
+  margin-left: 65%;
   cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .faQarrowdown :hover {
- 
 }
-.FAQ1{
+.FAQ1 {
   border-radius: 5px;
   border: #dcdcdc;
   background-color: #dcdcdc;
-  width: 30vw;
+  width: 40vw;
   height: 8vh;
   display: flex;
   align-items: center;
   justify-content: center;
-
-
+  box-shadow: 3px 4px rgb(189, 189, 189);
 }
-.FAQ2{
-  border-radius: 5px;
-  border: #dcdcdc;
-  background-color: #dcdcdc;
-  width: 30vw;
-  height: 8vh;
+
+.Footerbar {
+  border: #53917e solid;
+  background-color: #53917e;
+  height: 45vh;
+  display: flex;
+  flex-direction: row;
+}
+.Footlogodiv {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 15vw;
+  height: 40vh;
 }
-.FAQ3{
-  border-radius: 5px;
-  border: #dcdcdc;
-  background-color: #dcdcdc;
-  width: 30vw;
-  height: 8vh;
+.Footlogo {
+  width: 10vw;
+}
+.Fotcont1 {
   display: flex;
-  align-items: center;
   justify-content: center;
+  font-size: 2vw;
+  width: 70vw;
 }
-.FAQ4 {
-  border-radius: 5px;
-  border: #dcdcdc;
-  background-color: #dcdcdc;
-  width: 30vw;
-  height: 8vh;
+.footcontact {
   display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  width: 30vw;
+  color: white;
+}
+.Footphone {
+  display: flex;
+  font-size: 1.5vw;
   align-items: center;
-  justify-content: center;
+  width: 100%;
+  gap: 1vw;
+  padding-left: 2vw;
 }
 
-
-
-/*----tablet 768PX------*/
-@media screen and (max-width:768px){
-  .navbar{
-    font-size: 2vw ;
-  }
-  .navbaropties{
-    font-size: 1vw;
-  }
-  .account{
-    margin-right: 0vw;
-  }
-  .accountimage{
-    height: 7vh;
-    width: 4vw;
-  }
-  .accountbox{
-    border: #cfcfcf7d;
-    background-color: #cfcfcf7d;
-    width: 4vw ;
-    height: 7.5vh ;
-    border-radius: 100px;
-  }
-  .logo{
-    width: 6vw;
-  }
-  
+.Footsoc {
+  height: 40vh;
+  width: 10vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
 }
 
-/*----iphone 425PX------*/
-@media screen and (max-width:425px){
-  .navbar{
-    width: 191vw;
-    height: 20vh;
-  }
-  .navbaropties{
-
-  }
-  .logo{
-    width: 25vw;
-    margin-left: -20%;
-  }  
-  .sidebar1{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100vh;
-    width: 310px;
-    z-index: 999;
-    background-color: #53917E;
-    box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-    opacity: 100%;
-  }
-  .sidebaropties{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-  }
-
-
-}
 h1,
 .h1,
 h2,
@@ -785,7 +686,7 @@ select {
 
 body {
   min-height: 100vh;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 nav {
@@ -847,6 +748,278 @@ svg {
 
 .menu-button {
   display: none;
+}
+/*over ons pagina*/
+
+.OverOnstitel {
+  margin-top: 25vh;
+  margin-left: 8vw;
+  font-family: "Arial", serif;
+}
+.OOth2 {
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+
+.lijntje {
+  width: 90vw;
+  border: none;
+  border-bottom: 2px solid black;
+  margin-top: 6vh;
+}
+.profielen {
+  height: 230vh;
+  width: 90vw;
+  margin-left: 5vw;
+  margin-top: 7vh;
+  margin-bottom: 7vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*profielenRechts*/
+.profielRechts {
+  height: 50vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 5vh;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+.profielRechts:hover {
+  transform: scale(1.05);
+}
+.profielinfoRechts {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profielnaamRechts {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5vw;
+  padding: 1vh;
+}
+.profieltextRechts {
+  height: 35vh;
+  width: 100%;
+  padding: 1vh;
+}
+.profielrolRechts {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1vh;
+}
+.profielfotoRechts {
+  border: #ececec solid;
+  background-color: #ececec;
+  width: 20vw;
+  box-shadow: #c8c8c8 2px 2px;
+}
+
+/*profielenLinks*/
+.profielLinks {
+  height: 50vh;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  margin-top: 5vh;
+  transition: transform 0.3s ease;
+}
+.profielLinks:hover {
+  transform: scale(1.05);
+}
+.profielinfoLinks {
+  width: 40vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.profielnaamLinks {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5vw;
+  padding: 1vh;
+}
+.profieltextLinks {
+  height: 35vh;
+  width: 100%;
+  padding: 1vh;
+}
+.profielrolLinks {
+  height: 5vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 1vh;
+}
+.profielfotoLinks {
+  border: #ececec solid;
+  background-color: #ececec;
+  width: 20vw;
+  box-shadow: #c8c8c8 2px 2px;
+}
+
+/*reserverenpagina*/
+
+.ReserverenSect {
+  position: fixed;
+  inset: 0;
+  margin-top: 6rem;
+}
+.ReserverenDiv {
+  height: 88vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+/*sidebar*/
+.ResSidebar {
+  border: #ebebeb solid 2px;
+  background-color: #ebebeb;
+  width: 18vw;
+  height: 80vh;
+  box-shadow: 4px 4px rgb(219, 219, 219);
+}
+.ResSidehead {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 1vh;
+}
+.ResSideplaats {
+  font-size: 1.5vw;
+}
+.ResSidePlaatsHr {
+  width: 9vw;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.ResSidetext {
+  margin-top: 3vh;
+  margin-left: 1vw;
+  width: 90%;
+  height: 80%;
+}
+.ResSideBoeken {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 1vw;
+}
+.ResSideBoekenHr {
+  width: 6vw;
+  border: none;
+  border-bottom: 2px solid black;
+}
+.ResSideBoekenKnop {
+  border: #ff934f solid;
+  background-color: #ff934f;
+  color: white;
+  margin-top: 1vh;
+  width: 8vw;
+  height: 4vh;
+  border-radius: 6px;
+  padding-left: 2vw;
+  padding-top: 0.4vh;
+  box-shadow: 2px 2px rgb(212, 212, 212);
+  cursor: pointer;
+  animation: bounce 1s;
+  transition: transform ease-in-out 0.3s;
+}
+.ResSideBoekenKnop:hover {
+  transform: scale(1.1);
+}
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+}
+
+/*kaart*/
+.KaartDiv {
+  width: 70vw;
+  height: 80vh;
+  z-index: 1;
+  position: relative;
+  box-shadow: rgb(208, 208, 208) 4px 4px;
+}
+.KaartkeuzeDiv {
+  border: solid black;
+  display: flex;
+  width: 69vw;
+  height: 78vh;
+  justify-content: flex-end;
+  align-items: flex-end;
+  z-index: 2;
+}
+.KaartKeuzeZoom {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 9vw;
+  height: 5vh;
+  z-index: 2;
+}
+.KaartKeuzeDivPlus {
+  border: #427a69 solid;
+  background-color: #427a69;
+  color: white;
+  height: 4vh;
+  width: 2.3vw;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  padding-bottom: 0.5vh;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.KaartKeuzeDivPlus:hover {
+  transform: scale(1.1);
+}
+.KaartKeuzeDivMin {
+  border: #427a69 solid;
+  background-color: #427a69;
+  color: white;
+  height: 4vh;
+  width: 2.3vw;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vw;
+  z-index: 2;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+.KaartKeuzeDivMin:hover {
+  transform: scale(1.1);
 }
 
 @media (max-width: 770px) {
@@ -956,49 +1129,6 @@ svg {
   padding-top: 10%;
 }
 
-.navbar ul li {
-  list-style: none;
-  display: flex;
-  margin: 30px;
-  position: relative;
-}
-.navbar ul {
-  display: flex;
-  flex-direction: row;
-  padding-left: 10vw;
-}
-.navbar ul li a {
-  text-decoration: none;
-  color: #fff;
-  text-transform: uppercase;
-}
-
-.navbar ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.2s;
-}
-
-.navbar ul li:hover::after {
-  width: 100%;
-}
-
-.navbar.stickynavbar ul li::after {
-  content: '';
-  height: 3px;
-  width: 0;
-  background: #fff;
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  transition: 0.2s;
-}
-
 .border {
   width: 300px;
   height: 2px;
@@ -1030,18 +1160,4 @@ svg {
   color: #6ab04c;
   margin-bottom: 20px;
   display: flex;
-}
-
-@media screen and (max-width: 960px) {
-  .col {
-    flex: 100%;
-    max-width: 80%;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .col {
-    flex: 100%;
-    max-width: 100%;
-  }
 }

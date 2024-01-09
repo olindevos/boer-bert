@@ -1,6 +1,6 @@
 export default function Divacre() {
   return (
-    <div className="divacre">
+    <div id="activiteiten" className="divacre">
       Activiteiten en restaurants
       <div className="actcards">
         <div className="card1"></div>
@@ -10,8 +10,8 @@ export default function Divacre() {
       <div className="meerzien">
         <div className="mz">Meer zien</div>
         <a href="actrr.html">
-          {' '}
-          <div className="meerzienknop"></div>{' '}
+          {" "}
+          <div className="meerzienknop"></div>{" "}
         </a>
       </div>
       <div className="rescards">

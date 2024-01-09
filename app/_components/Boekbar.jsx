@@ -5,17 +5,10 @@ export default function Boekbar() {
         <div className="boekopties">
           <div className=" data ">
             data
-            <div className="dvt"> van - tot</div>
+            <div className="dvt"> van - </div>
           </div>
 
           <div className=" datalijn "></div>
-
-          <div className=" verblijvers">
-            verblijvers
-            <div className="vav"> aantal verblijvers</div>
-          </div>
-
-          <div className=" verblijverslijn"></div>
 
           <div className=" soortaccomodatie">
             soort acomodatie
@@ -25,7 +18,7 @@ export default function Boekbar() {
           <div className=" soortacclijn"></div>
 
           <button className="boeken" type="button">
-            boeken
+            <a href="/reserveren"></a> boeken
           </button>
         </div>
       </div>

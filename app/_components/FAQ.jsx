@@ -1,36 +1,15 @@
-import { SlArrowDown } from 'react-icons/sl';
+import FAQitem from "./FAQitem";
+
 export default function FAQ() {
   return (
-    <section className="FAQs">
-      <div className="FAQTITEL"> FAQ'S</div>
+    <section id="FAQs" className="FAQs">
+      <div className="FAQTITEL"> FAQ&apos;S</div>
 
       <div className="faq">
-        <div className="FAQ1">
-          veelgestelde vraag{' '}
-          <div classNameName="faQarrowdown">
-            <SlArrowDown />
-          </div>
-        </div>
-        <div className="FAQ2">
-          veelgestelde vraag{' '}
-          <div classNameName="faQarrowdown">
-            <SlArrowDown />
-          </div>
-        </div>
-        <div className="FAQ3">
-          veelgestelde vraag{' '}
-          <div classNameName="faQarrowdown">
-            <SlArrowDown />
-          </div>
-        </div>
-
-        <div className="FAQ4">
-          veelgestelde vraag{' '}
-          <div classNameName="faQarrowdown">
-            <SlArrowDown />
-          </div>{' '}
-        </div>
-        <div className=""></div>
+        <FAQitem name="veelgestelde vraag" />
+        <FAQitem name="veelgestelde vraag" />
+        <FAQitem name="veelgestelde vraag" />
+        <FAQitem name="veelgestelde vraag" />
       </div>
 
       <script></script>

@@ -1,7 +1,7 @@
-import Link from 'next/link';
-import { FaUser } from 'react-icons/fa';
+import Link from "next/link";
+import { FaUser } from "react-icons/fa";
 
-import { IoMdClose } from 'react-icons/io';
+import { IoMdClose } from "react-icons/io";
 
 export default function MobileNavigationBar({ user, handleNav }) {
   return (
@@ -38,9 +38,12 @@ export default function MobileNavigationBar({ user, handleNav }) {
                 {user.name}
               </Link>
             </li>
-            {user.role === 'admin' ? (
+            {user.role === "admin" ? (
               <li className="p-2">
-                <Link href="/dashboard" className="bg-wit rounded-md px-2 py-1 text-black">
+                <Link
+                  href="/dashboard"
+                  className="bg-wit rounded-md px-2 py-1 text-black"
+                >
                   Admin Dashboard
                 </Link>
               </li>
